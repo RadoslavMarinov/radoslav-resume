@@ -23,4 +23,4 @@ jobs:
     - name: publish-pages
       working-directory: ./src/pages
       run: |
-        npm run docs:publish 
+        npm run docs:update
