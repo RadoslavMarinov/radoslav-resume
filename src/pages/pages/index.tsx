@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.root} ${styles.bgRed}`}>
-        Riko
+        Riko SUPERRR SIII
         <h1>Home</h1>
         <nav className={`${styles.nav}`}>
           <Link href="/about/">About</Link>
