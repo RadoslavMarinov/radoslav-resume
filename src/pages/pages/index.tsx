@@ -22,6 +22,10 @@ export default function Home() {
           <Link href="/about/">About</Link>
           <Link href="/about/mabout">Mabout</Link>
         </nav>
+        <div className="bg-green-300 flex flex-row justify-center justify-around ">
+          <h3>Hello </h3>
+          <h3>Riko</h3>
+        </div>
       </div>
     </>
   );

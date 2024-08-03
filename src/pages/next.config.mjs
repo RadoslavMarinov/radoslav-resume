@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: '/radoslav-pages'
+  basePath: process.env.BASE_PATH ?? '/radoslav-pages'
 };
 
 export default nextConfig;
