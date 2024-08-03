@@ -19,7 +19,11 @@ export default function Home() {
       </Head>
       <div>About</div>
       <div>
-        <button onClick={() => setCount((prev) => prev + 1)}>
+        <h1>{count % 5 === 0 ? "Tadaaa!" : ""}</h1>
+        <button
+          className="bg-slate-700 text-white"
+          onClick={() => setCount((prev) => prev + 1)}
+        >
           Clicket {count} times
         </button>
       </div>

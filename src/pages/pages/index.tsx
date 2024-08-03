@@ -16,8 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.root} ${styles.bgRed}`}>
-        If this one works Then super!!!
-        <h1>Home</h1>
+        <h1>Riko you are the boss bro</h1>
         <nav className={`${styles.nav}`}>
           <Link href="/about/">About</Link>
           <Link href="/about/mabout">Mabout</Link>
