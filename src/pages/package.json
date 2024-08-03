@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docs:update": "rm -rf ../../docs && mkdir ../../docs && cp ./out/* ../../docs"
   },
   "dependencies": {
     "react": "^18",
