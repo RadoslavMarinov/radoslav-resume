@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+const basePath = process.env.BASE_PATH ?? ''
+console.log(`👉 BASE PATH  = `, basePath); 
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath: process.env.BASE_PATH ?? '/radoslav-pages'
+  basePath
 };
 
 export default nextConfig;
