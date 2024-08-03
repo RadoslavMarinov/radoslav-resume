@@ -17,6 +17,6 @@ Once the site is exported `npm run build` then the output form the `src/pages/ou
     const nextConfig = {
       reactStrictMode: true,
       output: "export",
-      basePath: '/radoslav-pages'
+      basePath: '/pages'
     }
   ```
