@@ -11,13 +11,16 @@ jobs:
       working-dir: ./src/pages
     steps:
     - uses: actions/checkout@v4
-      
     - uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20
     - name: install-dependcies
       working-directory: ./src/pages
       run: npm ci
     - name: build
       working-directory: ./src/pages
       run: npm run build
+    - name: publish-pages
+      working-directory: ./src/pages
+      run: |
+        npm run docs:publish 
