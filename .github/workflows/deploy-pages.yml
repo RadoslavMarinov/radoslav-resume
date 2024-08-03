@@ -20,4 +20,4 @@ jobs:
       run: npm ci
     - name: build
       working-directory: ./src/pages
-      run: npm build
+      run: npm run build
