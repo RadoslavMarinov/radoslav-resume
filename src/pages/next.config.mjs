@@ -5,7 +5,11 @@ console.log(`👉 BASE PATH  = `, basePath);
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
-  basePath
+  basePath,
+  images:{
+    loader: "custom",
+    loaderFile: './tools/custom-image-loader.js',
+  }
 };
 
 export default nextConfig;

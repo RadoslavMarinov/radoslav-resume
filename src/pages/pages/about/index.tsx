@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import React, { useState } from "react";
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -18,11 +18,8 @@ export default function Home() {
       <div>About</div>
       <div>
         <h1>{count % 5 === 0 ? "Tadaaa!" : ""}</h1>
-        <img
-          src="/profile-pic.jpeg"
-          width={100}
-          alt="Picture of the author"
-        ></img>
+
+        <Image src="/profile-pic.jpeg" alt="" width={28} height={99}></Image>
         <button
           className="bg-slate-700 text-white"
           onClick={() => setCount((prev) => prev + 1)}
