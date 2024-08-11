@@ -9,6 +9,8 @@ const nextConfig = {
   images:{
     loader: "custom",
     loaderFile: './tools/custom-image-loader.js',
+    path: '/pages'
+
   }
 };
 
