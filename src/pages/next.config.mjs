@@ -10,7 +10,6 @@ const nextConfig = {
     loader: "custom",
     loaderFile: './tools/custom-image-loader.js',
     path: '/pages'
-
   }
 };
 
