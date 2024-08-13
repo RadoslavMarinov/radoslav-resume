@@ -19,7 +19,12 @@ export default function Home() {
       <div>
         <h1>{count % 5 === 0 ? "Tadaaa!" : ""}</h1>
 
-        <Image src="/profile-pic.jpeg" alt="" width={100} height={99}></Image>
+        <Image
+          src="pages/profile-pic.jpeg"
+          alt=""
+          width={100}
+          height={99}
+        ></Image>
         <button
           className="bg-slate-700 text-white"
           onClick={() => setCount((prev) => prev + 1)}
