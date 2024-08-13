@@ -9,7 +9,18 @@ permissions:
   id-token: write
   
 jobs:
+  print-environment-variables:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print environment variables
+      run: |
+        echo "Environment variable BASE_PATH: $BASE_PATH"
+        echo "Environment variable NEXT_PUBLIC_BASE_PATH: $NEXT_PUBLIC_BASE_PATH"
+      env:
+        BASE_PATH: ${{ vars.BASE_PATH }}
+        NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
   build:
+    needs: print-environment-variables
     runs-on: ubuntu-latest
     env:
       working-dir: ./src/pages
