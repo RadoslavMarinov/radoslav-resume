@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   const [count, setCount] = useState(0);
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
 
   return (
     <>
@@ -26,6 +27,7 @@ export default function Home() {
         >
           Clicket {count} times
         </button>
+        <pre>BASE_PATH = {basePath}</pre>
       </div>
     </>
   );
