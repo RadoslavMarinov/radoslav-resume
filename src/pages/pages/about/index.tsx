@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Inter } from "next/font/google";
 import React, { useState } from "react";
 import Image from "next/image";
+import { StaticImage } from "@/components/StaticImage";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ export default function Home() {
         <h1>{count % 5 === 0 ? "Tadaaa!" : ""}</h1>
 
         <img src="/pages/profile-pic.jpeg" alt="" width={100} height={99}></img>
+        <StaticImage src="profile-pic.jpeg" width={200}></StaticImage>
         <button
           className="bg-slate-700 text-white"
           onClick={() => setCount((prev) => prev + 1)}
