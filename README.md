@@ -1,6 +1,6 @@
 ## Hello Riko
 
-#  [NextJS App Readme](./src/pages/README.md)
+* ## [NextJS App Readme](./src/pages/README.md)
 
 ### Prepare for github pages
 To prepare the build output of the NextJS static site, we need to copy it over to docs folder in the root 
