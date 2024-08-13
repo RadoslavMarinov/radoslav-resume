@@ -6,11 +6,11 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   basePath,
-  // images:{
-  //   loader: "custom",
-  //   loaderFile: './tools/custom-image-loader.js',
-  //   path: '/pages'
-  // }
+  images:{
+    loader: "custom",
+    loaderFile: './tools/custom-image-loader.js',
+    path: '/pages'
+  }
 };
 
 export default nextConfig;
