@@ -8,7 +8,7 @@ npm run dev
 ```
 
 ### ❗️Important: Images:
-  - Next Image component does not work for staticly generated sites. Therefore the native `<img>` tag shoult be used instead. The path to the image though should be prefixed with the Site base path (which is pages) [see more](https://nextjs.org/docs/pages/api-reference/next-config-js/basePath). Therefore a new ExportedImage component is made to prefix the image src with the site base path
+  - USE `StaticImage` component for images❗️ Next Image component does not work for staticly generated sites. Therefore the native `<img>` tag shoult be used instead. The path to the image though should be prefixed with the Site base path (which is pages) [see more](https://nextjs.org/docs/pages/api-reference/next-config-js/basePath). Therefore a new `StaticImage` component is made to prefix the image src with the site base path
 
 
 ## Environemnt variables:

@@ -21,7 +21,6 @@ export default function Home() {
       <div>
         <h1>{count % 5 === 0 ? "Tadaaa!" : ""}</h1>
 
-        <img src="/pages/profile-pic.jpeg" alt="" width={100} height={99}></img>
         <StaticImage src="profile-pic.jpeg" width={200}></StaticImage>
         <button
           className="bg-slate-700 text-white"
