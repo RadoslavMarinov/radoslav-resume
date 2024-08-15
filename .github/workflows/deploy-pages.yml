@@ -41,7 +41,6 @@ jobs:
       id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
       with:
         path: |
-          './src/pages/**/node_modules'
           ${{ steps.npm-cache-dir.outputs.dir }}
         key: ${{ runner.os }}-node-${{ hashFiles('./src/pages/**/package-lock.json') }}
         restore-keys: |
@@ -57,7 +56,7 @@ jobs:
 
     - name: install-dependcies
       working-directory: ./src/pages
-      run: npm ci
+      run: npm install
     - name: build
       working-directory: ./src/pages
       run: npm run build
