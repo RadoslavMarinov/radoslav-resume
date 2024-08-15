@@ -19,6 +19,7 @@ jobs:
       env:
         BASE_PATH: ${{ vars.BASE_PATH }}
         NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+
   build:
     needs: print-environment-variables
     runs-on: ubuntu-latest
@@ -29,6 +30,29 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: 20
+
+    # ----- CACHE NPM MODULES ----- #
+    - name: Get npm cache directory
+      id: npm-cache-dir
+      shell: bash
+      run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+
+    - uses: actions/cache@v4
+      id: npm-cache # use this to check for `cache-hit` ==> if: steps.npm-cache.outputs.cache-hit != 'true'
+      with:
+        path: ${{ steps.npm-cache-dir.outputs.dir }}
+        key: ${{ runner.os }}-node-${{ hashFiles('./src/pages/**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Cache Hit
+      run: |
+          echo "Cache hit: $CACHE_HIT"
+      env:
+        CACHE_HIT: ${{steps.npm-cache.outputs.cache-hit}}
+      
+    # ----- ENDOF CACHE NPM MODULES ----- #
+
     - name: install-dependcies
       working-directory: ./src/pages
       run: npm ci
@@ -43,6 +67,7 @@ jobs:
       with:
         path: ./src/pages/out
       # Deployment job
+
   deploy:
     environment:
       name: github-pages
