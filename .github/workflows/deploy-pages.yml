@@ -61,9 +61,13 @@ jobs:
     - name: build
       working-directory: ./src/pages
       run: npm run build
-      # env:
-      #   BASE_PATH: ${{ vars.BASE_PATH }}
-      #   NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+      env:
+        BASE_PATH: ${{ vars.BASE_PATH }}
+        NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH }}
+    
+    - name: copy cname
+      working-directory: ./src/pages
+      run: cp CNAME ./out
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3        
