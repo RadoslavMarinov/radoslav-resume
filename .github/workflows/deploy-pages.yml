@@ -56,7 +56,7 @@ jobs:
 
     - name: install-dependcies
       working-directory: ./src/pages
-      run: npm install
+      run: npm ci
 
     - name: build
       working-directory: ./src/pages

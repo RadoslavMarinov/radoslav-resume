@@ -22,3 +22,4 @@ Once the site is exported `npm run build` then the output form the `src/pages/ou
       basePath: '/pages'
     }
   ```
+## Developement

@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import React, { useState } from "react";
 import Image from "next/image";
 import { StaticImage } from "@/components/StaticImage";
+import { FireBtn } from "@/components/buttons/FireBtn";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,10 @@ export default function Home() {
           Clicket {count} times
         </button>
         <pre>BASE_PATH = {basePath}</pre>
+
+        <div className="flex justify-center ">
+          <FireBtn />
+        </div>
       </div>
     </>
   );
