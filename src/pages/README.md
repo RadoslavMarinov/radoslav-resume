@@ -13,4 +13,7 @@ npm run dev
 
 ## Environemnt variables:
 - `BASE_PATH` - the site base path following the domain [see more](https://nextjs.org/docs/pages/api-reference/next-config-js/basePath)
-- `NEXT_PUBLIC_BASE_PATH` - the same as `BASE_PATH` but for the frontend 
+- `NEXT_PUBLIC_BASE_PATH` - the same as `BASE_PATH` but for the frontend
+
+## Deployment
+### [CloudFlare](./docs/CloudFlare/CloudFlare.md)
