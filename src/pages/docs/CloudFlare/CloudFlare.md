@@ -1,5 +1,5 @@
 # Cloudflare for github pages
-## 1 Make a website
+## 1 Create a website
   ![](./img/cloudflare-website.png)
 
 ## 2 DNS setup 

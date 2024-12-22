@@ -16,4 +16,6 @@ npm run dev
 - `NEXT_PUBLIC_BASE_PATH` - the same as `BASE_PATH` but for the frontend
 
 ## Deployment
+### [Domain name registrar Namecheap]()
+### [GithubPages](./docs/GithubPages/GitHubPages.md)
 ### [CloudFlare](./docs/CloudFlare/CloudFlare.md)
