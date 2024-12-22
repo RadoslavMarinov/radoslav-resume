@@ -6,5 +6,8 @@
   
   ![](./img/dns.png)
 
+  > ### Copy Cloudflare Nameservers
+  > We will need it for later!
+
 ## 2 Set Encription mode
 * set encription mode full ![](./img/encription-mode-full.png)  
