@@ -15,6 +15,12 @@ npm run dev
 - `BASE_PATH` - the site base path following the domain [see more](https://nextjs.org/docs/pages/api-reference/next-config-js/basePath)
 - `NEXT_PUBLIC_BASE_PATH` - the same as `BASE_PATH` but for the frontend
 
+## Locally test production build
+1) Go to `cd src/pages`
+2) Run `npm run build`. An `out` directory should appear
+3) Go to `cd ./out`
+4) Find `index.html` and serve via **Live Server** extension
+
 ## Deployment
 ### [GithubPages](./docs/GithubPages/GitHubPages.md)
 ### [CloudFlare](./docs/CloudFlare/CloudFlare.md)
