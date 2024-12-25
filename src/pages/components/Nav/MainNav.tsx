@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Burger } from "../Items/Burger/Burger";
 import React from "react";
+import NavLink from "../Links/NavLinks/NavLink";
 
 interface NavItem {
   label: string;
@@ -24,21 +25,45 @@ const navItems: NavItem[] = [
 export const MainNav = ({}: MainNavProps) => {
   const [open, setOpen] = React.useState(false);
 
+  const navItemClicked = (label: string) => {
+    setOpen(false);
+  };
+
   return (
-    <nav className={`relative bg-default font-bold  text-lg`}>
+    <>
       <Burger open={open} setOpen={setOpen} />
-      <div
+      <nav
         className={`
-          flex flex-col md:flex-row justify-center items-center align-middle
-          ${open ? "flex" : "hidden md:flex"}
+        absolute
+        bg-default
+        font-bold
+        text-lg
+        min-w-[280px]
+        md:w-full
+        right-0
+        md:left-0
+        transition-transform duration-200 ease-out
+        md:translate-x-0
+         ${open ? "min-w-52" : "translate-x-full"}
         `}
       >
-        {navItems.map((i, idx) => (
-          <Link className={`w-full text-center`} href={i.link} key={idx}>
-            {i.label}
-          </Link>
-        ))}
-      </div>
-    </nav>
+        <div
+          className={`
+          flex 
+          flex-col
+          md:flex-row 
+        `}
+        >
+          {navItems.map(({ label, link }, idx) => (
+            <NavLink
+              onClick={() => navItemClicked(label)}
+              key={idx}
+              href={link}
+              label={label}
+            ></NavLink>
+          ))}
+        </div>
+      </nav>
+    </>
   );
 };

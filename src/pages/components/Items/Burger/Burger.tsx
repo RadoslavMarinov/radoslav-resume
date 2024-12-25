@@ -8,6 +8,7 @@ export function Burger({
   return (
     <button
       className={`
+        z-10
         md:hidden
         absolute top-0 right-0 flex flex-col justify-around w-[28px] h-[28px]`}
       onClick={() => setOpen(!open)}
