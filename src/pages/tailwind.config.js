@@ -11,9 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'rsm-left-nav': 'rgb(67, 66, 68)',
         'default': 'rgb(246, 243, 240)',
-      }
-    },
+      },
+    }
   },
   plugins: [],
 }
