@@ -3,8 +3,8 @@ import React from "react";
 
 const ResumePage: React.FC = () => {
   return (
-    <div style={{}} className="flex flex-row flex-wrap h-full ">
-      <div className="h-[100vh] flex flex-col text-center text-white bg-rsm-left-nav basis-1/5 min-w-32 p-4 h-full">
+    <div id="resume-page" style={{}} className=" flex flex-row flex-wrap">
+      <div className="h-[100vh] flex flex-col text-center text-white bg-rsm-left-nav basis-1/5 min-w-32 p-4">
         <StaticImage
           src="rsm-image.jpeg"
           className="border rounded-[50%]"
