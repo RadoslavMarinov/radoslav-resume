@@ -52,8 +52,6 @@ jobs:
       env:
         CACHE_HIT: ${{steps.npm-cache.outputs.cache-hit}}
       
-    # ----- ENDOF CACHE NPM MODULES ----- #
-
     - name: install-dependcies
       working-directory: ./src/pages
       run: npm ci

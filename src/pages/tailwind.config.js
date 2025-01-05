@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         'rsm-left-nav': 'rgb(67, 66, 68)',
         'default': 'rgb(246, 243, 240)',
+        'heading': 'rgb(120, 40, 40)',
       },
     }
   },
