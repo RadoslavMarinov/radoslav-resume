@@ -6,7 +6,9 @@ interface SectionTitleProps {
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
   return (
-    <h2 className="text-[2em] p-3 text-heading w-full text-center">{title}</h2>
+    <h2 className="text-[2em] p-3 text-rsm-secondary w-full text-center">
+      {title}
+    </h2>
   );
 };
 

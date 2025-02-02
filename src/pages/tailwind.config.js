@@ -11,10 +11,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'rsm-left-nav': 'rgb(67, 66, 68)',
+        'rsm-main': 'rgba(67, 66, 68, 0.9)',
+        'rsm-secondary': 'rgba(120, 40, 40, 1)',
+        "rsm-tertiary": 'rgba(0, 117, 117, 0.9)',
         'default': 'rgb(246, 243, 240)',
         'heading': 'rgb(120, 40, 40)',
       },
+      boxShadow:{
+        'rsm-secondary': '0px 9px 22px 4px rsm-secondary',
+      }
     }
   },
   plugins: [],
