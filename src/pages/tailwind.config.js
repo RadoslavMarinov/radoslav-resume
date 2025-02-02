@@ -11,9 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'rsm-main': 'rgba(67, 66, 68, 0.9)',
+        'rsm-main': 'rgba(67, 64, 65, 1)',
         'rsm-secondary': 'rgba(120, 40, 40, 1)',
-        "rsm-tertiary": 'rgba(0, 117, 117, 0.9)',
+        "rsm-tertiary": 'rgba(0, 100, 100, 0.9)',
         'default': 'rgb(246, 243, 240)',
         'heading': 'rgb(120, 40, 40)',
       },
